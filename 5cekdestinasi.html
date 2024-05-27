@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisetouraja - Your Ultimate Travel Companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="5style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="logo.png" alt="Wisetour">
+                    </div>
+                    <div class="website-name"></div>
+                </div>
+                <p1 class="p1"><strong>WiseTour</strong></p1>
+                <li><a href="3afterlog.html" class="header">Beranda</a></li>
+                <li><a href="4artikel.html" class="header">Artikel</a></li>
+                <li><a href="5cekdestinasi.html" class="header">Cek Destinasi</a></li>
+                <li><a href="#" class="header">Booking</a></li>
+                <li><a href="#" class="header">Tentang Kami</a></li>
+                <li><a href="profile.html"><img src="avatar1.png" alt="User Profile" class="user-avatar"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="margin-left: 30px;">Kunjungi Destinasi Pilihanmu</h1>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Bukit Selong Desa Sembalun</h1>
+                <p>Rp. 6600, Lombok Timur, Sembalun</p>
+                <button class="book-button">Book Your Weekend</button>
+            </div>
+        </section>
+
+        <section class="kategori">
+            <h2>Rekomendasi Weekend</h2>
+            <button onclick="filterRekomendasi('gunung')">Gunung</button>
+            <button onclick="filterRekomendasi('pantai')">Pantai</button>
+            <button onclick="filterRekomendasi('air_terjun')">Air Terjun</button>
+        </section>
+
+        <section class="recommendation">
+            <div id="rekomendasiContainer" class="card-container">
+                <div class="card" data-kategori="pantai">
+                    <a href="pantai_mandalika.html">
+                        <img src="pantaimanda.jpg" alt="Pantai Mandalika">
+                        <h2>Pantai Mandalika</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="pantai">
+                    <a href="pantai_mandalika.html">
+                        <img src="pantaiaan.jpg" alt="Pantai Aan">
+                        <h2>Pantai Aan</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="pantai">
+                    <a href="pantai_mandalika.html">
+                        <img src="pantaimawun.jpg" alt="Pantai Mawun">
+                        <h2>Pantai Mawun</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="pantai">
+                    <a href="pantai_mandalika.html">
+                        <img src="pantaiseger.jpg" alt="Pantai Seger">
+                        <h2>Pantai Seger</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="pantai">
+                    <a href="pantai_mandalika.html">
+                        <img src="pantaisetangi.jpg" alt="Pantai Setangi">
+                        <h2>Pantai Setangi</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="pantai">
+                    <a href="pantai_mandalika.html">
+                        <img src="pantaisurga.jpg" alt="Pantai Surga">
+                        <h2>Pantai Surga</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="gunung">
+                    <a href="pantai_mandalika.html">
+                        <img src="savanadandaun.jpg" alt="Savana Dandaun">
+                        <h2>Savana Dandaun</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="gunung">
+                    <a href="pantai_mandalika.html">
+                        <img src="savanapropok.jpg" alt="Savana Propok">
+                        <h2>Savana Propok</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="gunung">
+                    <a href="pantai_mandalika.html">
+                        <img src="bktbatuidung.jpg" alt="Bukit Batu Idung">
+                        <h2>Bukit Batu Idung</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="gunung">
+                    <a href="pantai_mandalika.html">
+                        <img src="bktmarese.jpg" alt="Bukit Marese">
+                        <h2>Bukit Marese</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="gunung">
+                    <a href="pantai_mandalika.html">
+                        <img src="bktmontonggede.jpg" alt="Bukit Montong Gede">
+                        <h2>Bukit Montong Gede</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="gunung">
+                    <a href="pantai_mandalika.html">
+                        <img src="bktpergasingan.jpg" alt="Bukit Pergasingan">
+                        <h2>Bukit Pergasingan</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="air_terjun">
+                    <a href="pantai_mandalika.html">
+                        <img src="traikkelip.jpg" alt="Aik Kelip">
+                        <h2>Aik Kelip</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="air_terjun">
+                    <a href="pantai_mandalika.html">
+                        <img src="trbenangkelambu.jpg" alt="Benang Kelambu">
+                        <h2>Benang Kelambu</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="air_terjun">
+                    <a href="pantai_mandalika.html">
+                        <img src="trmengkusakti.jpg" alt="Mengku Sakti">
+                        <h2>Mengku Sakti</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="air_terjun">
+                    <a href="pantai_mandalika.html">
+                        <img src="trsemporonan.jpg" alt="Semporonan">
+                        <h2>Semporonan</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="air_terjun">
+                    <a href="pantai_mandalika.html">
+                        <img src="trtibuatas.jpg" alt="Tibu Atas">
+                        <h2>Tibu Atas</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-kategori="air_terjun">
+                    <a href="pantai_mandalika.html">
+                        <img src="trumarmaya.jpg" alt="Umar Maya">
+                        <h2>Umar Maya</h2>
+                    </a>
+                    <div class="card-info">
+                        <p>Rp 10.000(org) Lombok Tengah, Kuta</p>
+                        <div class="interaction">
+                            <button class="like-btn">❤️<span class="like-count">0</span></button>
+                        </div>
+                        <div class="comments-section">
+                            <input type="text" placeholder="Add a comment" class="comment-input">
+                            <div class="comments"></div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo2">
+                <img src="logo.png" alt="Wisetour">
+            </div>
+            <div class="about-us">
+                <p class="p7">Tentang Kami</p>
+                <p>Kami di Unstress bertekad membantu Anda mengatasi stres dan masalah kesehatan mental dengan
+                    menyediakan alat dan dukungan yang Anda butuhkan...</p>
+                <a href="2.login.html" class="read-more">Baca Selengkapnya</a>
+            </div>
+            <div class="navigation">
+                <p class="p7" style="margin-left: 60px;">Tautan Website</p>
+                <ul>
+                    <li><a href="3afterlog.html" class="btn2">BERANDA</a></li>
+                    <li><a href="#" class="btn2">BOOKING</a></li>
+                    <li><a href="4artikel.html" class="btn2">ARTIKEL</a></li>
+                    <li><a href="#" class="btn2">ABOUT AS</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <p class="p7">Hubungi Kami:</p>
+                <p>Email: example@example.com</p>
+                <p class="p7">Sosial Media:</p>
+            </div>
+        </div>
+        <div class="copyright">
+            ©WiseTour, All Rights Reserved
+        </div>
+    </footer>
+
+    <script>
+        function filterRekomendasi(kategori) {
+            const rekomendasiContainer = document.getElementById('rekomendasiContainer');
+            const rekomendasi = rekomendasiContainer.children;
+            for (let i = 0; i < rekomendasi.length; i++) {
+                if (rekomendasi[i].getAttribute('data-kategori') === kategori) {
+                    rekomendasi[i].style.display = 'block';
+                } else {
+                    rekomendasi[i].style.display = 'none';
+                }
+            }
+        }
+        document.querySelectorAll('.like-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const likeCount = button.querySelector('.like-count');
+                if (button.classList.contains('liked')) {
+                    likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                    button.classList.remove('liked');
+                } else {
+                    likeCount.textContent = parseInt(likeCount.textContent) + 1;
+                    button.classList.add('liked');
+                }
+            });
+        });
+
+        document.querySelectorAll('.comment-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const commentSection = button.parentElement.nextElementSibling;
+                const commentInput = commentSection.querySelector('.comment-input');
+                const comments = commentSection.querySelector('.comments');
+                const commentCount = button.querySelector('.comment-count');
+
+                commentInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter' && commentInput.value) {
+                        const newComment = document.createElement('p');
+                        newComment.textContent = commentInput.value;
+                        comments.appendChild(newComment);
+                        commentInput.value = '';
+                        commentCount.textContent = parseInt(commentCount.textContent) + 1;
+                    }
+                });
+            });
+        });
+
+        // Function to retrieve and display temperature - integrate with a weather API
+        async function updateTemperature() {
+            const temperatureElements = document.querySelectorAll('.temperature');
+            temperatureElements.forEach(tempElem => {
+                // Replace with actual API call result
+            });
+        }
+
+        updateTemperature();
+    </script>
+</body>
+
+</html>
